@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday, Shelvina ✨</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+body{font-family:Poppins,sans-serif;color:#5a3d5c;background:linear-gradient(160deg,#ffe3ef,#f1e4ff 55%,#ffe9dc) fixed;overflow-x:hidden}
+h1,h2{font-family:Caveat,cursive;color:#e0629a}
+#cf{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+#fl{position:fixed;inset:0;pointer-events:none;overflow:hidden}
+.f{position:absolute;bottom:-40px;animation:up linear forwards}
+@keyframes up{0%{opacity:0}10%{opacity:.85}100%{transform:translateY(-115vh) rotate(40deg);opacity:0}}
+.s{display:none;min-height:100vh;flex-direction:column;align-items:center;justify-content:center;padding:28px 20px;text-align:center;position:relative;z-index:2}
+.s.on{display:flex;animation:in .6s}
+@keyframes in{from{opacity:0;transform:translateY(14px)}}
+.c{background:rgba(255,255,255,.75);border-radius:28px;box-shadow:0 12px 40px rgba(201,130,170,.22);padding:32px 24px;max-width:460px;width:100%}
+.b{font:600 1rem Poppins,sans-serif;border:0;cursor:pointer;padding:14px 26px;border-radius:99px;background:linear-gradient(135deg,#ff8fb8,#c9a0ff);color:#fff;box-shadow:0 8px 20px rgba(255,143,184,.45)}
+.b.g{background:#fff;color:#8a6b8c;box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.b:active{transform:scale(.95)}
+#intro h1{font-size:2.5rem;line-height:1.1;margin:12px 0 8px}
+#intro h1 span{display:block;font-size:1.6rem;color:#5a3d5c}
+#intro p{font-size:.9rem;margin-bottom:22px;color:#8a6b8c}
+#q h2{font-size:2rem;line-height:1.25;margin-bottom:24px}
+#no.run{position:fixed;z-index:60;transition:left .25s,top .25s}
+#main{justify-content:flex-start;padding:48px 20px 70px;gap:32px}
+.w{width:100%;max-width:480px}
+.w>h2{font-size:2rem;margin-bottom:12px}
+.letter{background:#fffdf8 repeating-linear-gradient(transparent,transparent 31px,#f6e6ee 32px);border-radius:20px;padding:28px 22px;text-align:left;box-shadow:0 12px 36px rgba(180,120,160,.25)}
+#tt{font:1.45rem/32px Caveat,cursive;white-space:pre-wrap;min-height:160px}
+.cur{display:inline-block;width:2px;height:1.1em;background:#e0629a;vertical-align:middle;animation:bl .8s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.hint{font-size:.7rem;color:#8a6b8c;text-align:center;margin-top:8px}
+.r{display:none;opacity:0;transform:translateY(24px);transition:all .9s}
+.r.v{opacity:1;transform:none}
+#gal{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.p{background:#fff;padding:8px 8px 10px;border-radius:14px;box-shadow:0 8px 20px rgba(150,100,150,.2)}
+.p:nth-child(odd){transform:rotate(-2deg)}.p:nth-child(even){transform:rotate(2deg)}
+.p img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:9px;display:block}
+.p span{display:block;font:1.1rem Caveat,cursive;margin-top:5px;color:#8a6b8c}
+.cake{position:relative;width:200px;height:170px;margin:34px auto 22px}
+.cake i{position:absolute;left:50%;transform:translateX(-50%);display:block}
+.l1{bottom:0;width:200px;height:70px;background:linear-gradient(#ffb3cf,#ff8fb8);border-radius:14px}
+.l2{bottom:62px;width:150px;height:56px;background:linear-gradient(#fff,#ffe3ef);border-radius:14px}
+.cd{bottom:118px;width:12px;height:42px;background:repeating-linear-gradient(45deg,#fff 0 6px,#ffb3cf 6px 12px);border-radius:4px}
+.fm{bottom:158px;width:16px;height:26px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 50% 70%,#fff6a8,#ffc53d 50%,#ff8a3d);box-shadow:0 0 18px 6px rgba(255,190,70,.6);animation:fk .18s infinite alternate;transition:opacity .5s}
+.fm.out{opacity:0;animation:none}
+@keyframes fk{from{transform:translateX(-50%) rotate(-3deg)}to{transform:translateX(-50%) scale(.92,1.08) rotate(3deg)}}
+#wish{margin-top:20px;opacity:0;max-height:0;overflow:hidden;transition:all .9s;background:rgba(255,255,255,.85);border-radius:20px;padding:0 22px;font:1.45rem/1.5 Caveat,cursive}
+#wish.on{opacity:1;max-height:420px;padding:20px 22px}
+#mt{position:fixed;top:14px;right:14px;z-index:70;width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.85);font-size:1.1rem;display:none}
+</style></head><body>
+<canvas id="cf"></canvas><div id="fl"></div><button id="mt">🎵</button>
+
+<!-- LAGU: otomatis memakai file .mp3 pertama di repo. Kalau gagal, dipakai "musik.mp3" di bawah ini. -->
+<audio id="bgm" src="musik.mp3" loop></audio>
+
+<section id="intro" class="s on"><div class="c">
+<div style="font-size:3.2rem">🎂</div>
+<h1>Happy Birthday,<span>Shelvina Anwarul Husna ✨</span></h1>
+<p>Ada sesuatu kecil yang aku siapin buat kamu 🤍</p>
+<button class="b" id="open">Buka Kejutan 🎁</button></div></section>
+
+<section id="q" class="s"><div class="c">
+<h2>Walau status kita belum jelas, Shelvina tetep mau kan dapet ucapan spesial? 🥺</h2>
+<div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;min-height:56px">
+<button class="b" id="yes">Mau Banget 💖</button><button class="b g" id="no">Enggak</button></div></div></section>
+
+<section id="main" class="s">
+<div class="w"><h2>Buat Kamu, Shelvina 💌</h2>
+<div class="letter" id="lt"><span id="tt"></span><span class="cur" id="cur"></span><p class="hint" id="hint">(tap suratnya biar langsung kebaca semua)</p></div></div>
+<div class="w r" id="gs"><h2>Galeri Kenangan 📸</h2><div id="gal"></div></div>
+<div class="w r" id="cs"><h2>Make a Wish 🕯️</h2>
+<div style="display:flex;flex-direction:column;align-items:center">
+<div class="cake"><i class="fm" id="fm"></i><i class="cd"></i><i class="l2"></i><i class="l1"></i></div>
+<button class="b" id="blow">Tiup Lilin & Make a Wish 🎂</button>
+<!-- PESAN HARAPAN: edit teks di bawah ini -->
+<div id="wish">Semoga semua yang kamu harapin tahun ini pelan-pelan jadi nyata ✨<br><br>Semoga kamu selalu dikelilingi orang-orang yang tulus, banyak ketawa, dan sedikit capeknya 🤍<br><br>Dan semoga... aku boleh jadi salah satu alasan kamu senyum tahun ini 😌💖</div>
+</div></div>
+</section>
+
+<script>
+/* ✏️ TEKS SURAT — edit isi di antara tanda kutip. Satu baris = satu paragraf. */
+const LETTER=[
+"Hai, Shelvina 🌷",
+"Selamat ulang tahun ya! Semoga hari ini jadi hari yang lembut buat kamu: banyak tawa, banyak makanan enak, dan banyak ucapan yang tulus.",
+"Jujur, aku nggak tahu persisnya kita ini apa 😅 Tapi yang aku tahu, sejak ada kamu, hari-hariku jadi lebih berwarna. Chat dari kamu sering jadi bagian favorit hariku.",
+"Kamu tuh bikin suasana jadi adem, tapi diam-diam bikin deg-degan juga. Hati-hati ya, itu bahaya 😌",
+"Terima kasih udah hadir dan mewarnai hari-hariku. Semoga tahun ini kamu makin bahagia dan makin berani ngejar mimpi.",
+"Dan kalau suatu hari kamu mau tahu jawaban dari status kita yang belum jelas ini... aku siap ngobrol kapan aja 🤭",
+"Happy birthday, Shelvina 🎂✨",
+"— dari seseorang yang diam-diam senang kenal kamu 🤍"
+];
+const SPEED=38; /* ms per huruf */
+
+/* 📸 FOTO & LAGU otomatis diambil dari repo GitHub-mu (semua .jpg/.png/.webp + .mp3 pertama).
+   Kalau ganti nama repo/username, ubah dua baris ini. */
+const OWNER="arvian07c", REPO="ultah-shelvina";
+/* Caption foto (berurutan, boleh diedit) */
+const CAPS=["Kamu yang manis 🌸","Momen favorit ✨","Senyum itu 🤍","Hari yang seru 🎈","Kita? 😌","Satu lagi buat kenangan 💫","Favorit terbaru 💖","Bikin senyum 🌷"];
+/* Cadangan kalau auto-deteksi gagal: isi nama file foto di sini */
+let PHOTOS=["foto1.jpg","foto2.jpg","foto3.jpg"];
+
+const $=id=>document.getElementById(id), bgm=$("bgm");
+const ready=fetch(`https://api.github.com/repos/${OWNER}/${REPO}/contents/`).then(r=>r.json()).then(fs=>{
+  const n=fs.filter(f=>f.type=="file").map(f=>f.name);
+  const im=n.filter(x=>/\.(jpe?g|png|webp|gif)$/i.test(x)).sort();
+  const au=n.find(x=>/\.(mp3|m4a|ogg|wav)$/i.test(x));
+  if(im.length)PHOTOS=im;
+  if(au)bgm.src=encodeURIComponent(au);
+}).catch(()=>{});
+
+const show=id=>{document.querySelectorAll(".s").forEach(s=>s.classList.remove("on"));$(id).classList.add("on");scrollTo(0,0)};
+
+$("open").onclick=()=>{bgm.volume=.6;bgm.play().catch(()=>{});$("mt").style.display="block";show("q")};
+$("mt").onclick=()=>{if(bgm.paused){bgm.play();$("mt").textContent="🎵"}else{bgm.pause();$("mt").textContent="🔇"}};
+
+/* tombol "Enggak" kabur */
+const no=$("no"),T=["Enggak","Eh salah pencet?","Yakin? 🥺","Coba lagi~","Tombol itu rusak 😝","Pilih yang satunya aja 💖"];let k=0;
+function run(e){e.preventDefault();no.textContent=T[++k%T.length];no.classList.add("run");
+  no.style.left=Math.max(12,Math.random()*(innerWidth-no.offsetWidth-24))+"px";
+  no.style.top=Math.max(12,Math.random()*(innerHeight-no.offsetHeight-24))+"px"}
+["mouseenter","click"].forEach(v=>no.addEventListener(v,run));no.addEventListener("touchstart",run,{passive:false});
+
+$("yes").onclick=()=>{no.classList.remove("run");show("main");floaters();confetti(150,1);ready.then(gallery);setTimeout(type,700)};
+
+/* typewriter */
+let done=0,tm;const TXT=LETTER.join("\n\n");
+function type(){let i=0;tm=setInterval(()=>{$("tt").textContent+=TXT[i++];if(i>=TXT.length)fin()},SPEED)}
+function fin(){if(done)return;done=1;clearInterval(tm);$("tt").textContent=TXT;$("cur").style.display=$("hint").style.display="none";rev("gs",400);rev("cs",1300)}
+$("lt").onclick=fin;
+function rev(id,d){setTimeout(()=>{const e=$(id);e.style.display="block";requestAnimationFrame(()=>requestAnimationFrame(()=>e.classList.add("v")))},d)}
+
+/* galeri */
+function gallery(){const g=$("gal");if(g.children.length)return;
+  PHOTOS.forEach((s,i)=>{const d=document.createElement("div");d.className="p";
+    d.innerHTML=`<img src="${encodeURIComponent(s)}" alt=""><span>${CAPS[i%CAPS.length]}</span>`;
+    d.firstChild.onerror=()=>d.remove();g.appendChild(d)})}
+
+/* tiup lilin */
+$("blow").onclick=function(){$("fm").classList.add("out");this.disabled=true;this.textContent="Semoga terkabul 🌟";confetti(140,0);
+  setTimeout(()=>{$("wish").classList.add("on");$("wish").scrollIntoView({behavior:"smooth",block:"center"})},700)};
+
+/* elemen melayang */
+let ft;function floaters(){if(ft)return;const I=["✨","💖","⭐","🌸","🤍","💫","🎀"];
+  const sp=()=>{const e=document.createElement("span");e.className="f";e.textContent=I[Math.random()*I.length|0];
+    e.style.cssText=`left:${Math.random()*100}vw;font-size:${14+Math.random()*18}px;animation-duration:${7+Math.random()*7}s`;
+    $("fl").appendChild(e);setTimeout(()=>e.remove(),15000)};
+  for(let i=0;i<8;i++)setTimeout(sp,i*250);ft=setInterval(sp,900)}
+
+/* konfeti */
+const cv=$("cf"),cx=cv.getContext("2d");let P=[],on=0;
+const rs=()=>{cv.width=innerWidth;cv.height=innerHeight};rs();addEventListener("resize",rs);
+const COL=["#ff8fb8","#ffd6e7","#c9b6ff","#ffe2a8","#a8e6ff","#ffb3cf"];
+function confetti(n,top){for(let i=0;i<n;i++)P.push({x:Math.random()*cv.width,y:top?-20-Math.random()*cv.height*.6:cv.height*.55,
+  r:4+Math.random()*5,c:COL[Math.random()*6|0],vx:(Math.random()-.5)*(top?1.2:7),vy:top?1+Math.random()*1.6:-(4+Math.random()*8),
+  g:top?0:.22,a:Math.random()*6,va:(Math.random()-.5)*.15});
+  if(!on){on=1;requestAnimationFrame(tick)}}
+function tick(){cx.clearRect(0,0,cv.width,cv.height);
+  P.forEach(p=>{p.vy+=p.g;p.x+=p.vx;p.y+=p.vy;p.a+=p.va;cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.globalAlpha=.85;cx.fillRect(-p.r,-p.r/2,p.r*2,p.r);cx.restore()});
+  P=P.filter(p=>p.y<cv.height+30);P.length?requestAnimationFrame(tick):(on=0,cx.clearRect(0,0,cv.width,cv.height))}
+</script></body></html>
